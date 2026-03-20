@@ -2,38 +2,84 @@ owner: app-shore
 repo: sally-status
 
 sites:
-  - name: API Liveness
+  - name: SALLY API
     url: https://sally-api-staging.appshore.in/api/v1/health/live
+    icon: https://staging.sally.appshore.in/favicon.ico
     expectedStatusCodes:
       - 200
-  - name: API Readiness (DB + Redis)
+  - name: Database & Cache
     url: https://sally-api-staging.appshore.in/api/v1/health/ready
+    icon: https://staging.sally.appshore.in/favicon.ico
     expectedStatusCodes:
       - 200
-  - name: Web App
+  - name: Web Dashboard
     url: https://staging.sally.appshore.in
-  - name: Console
+    icon: https://staging.sally.appshore.in/favicon.ico
+  - name: Developer Console
     url: https://console.staging.sally.appshore.in
+    icon: https://staging.sally.appshore.in/favicon.ico
 
 status-website:
   baseUrl: /sally-status
-  name: SALLY Platform Status
-  introTitle: "**SALLY** is the AI-native fleet operations platform."
-  introMessage: Real-time monitoring of platform health and availability.
+  name: SALLY Status
+  logoUrl: https://staging.sally.appshore.in/favicon.ico
+  introTitle: "**SALLY** Platform Status"
+  introMessage: Real-time health monitoring for the SALLY fleet operations platform. This page is updated every 5 minutes.
   theme: dark
+  favicon: https://staging.sally.appshore.in/favicon.ico
   navbar:
-    - title: SALLY
+    - title: Dashboard
       href: https://staging.sally.appshore.in
+    - title: Console
+      href: https://console.staging.sally.appshore.in
+    - title: API Docs
+      href: https://console.staging.sally.appshore.in/docs
+  css: |
+    :root {
+      --primary: #ffffff;
+      --background: #09090b;
+      --card-background: #18181b;
+      --border: #27272a;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #09090b;
+    }
+    .logo-title {
+      letter-spacing: -0.025em;
+      font-weight: 700;
+    }
+    .graph canvas {
+      opacity: 0.6;
+    }
 
 assignees:
   - ajaynarang
 
+workflowSchedule:
+  uptime:
+    cron: "*/5 * * * *"
+  responseTime:
+    cron: "*/30 * * * *"
+  graphs:
+    cron: "0 */6 * * *"
+  summary:
+    cron: "0 0 * * *"
+
 i18n:
   activeIncidents: Active Incidents
-  noActiveIncidents: All systems operational
-  pastIncidents: Past Incidents
+  noActiveIncidents: All systems operational — no incidents detected.
+  pastIncidents: Recent Incidents
   pastIncidentsResolved: Resolved
-  liveStatus: Live Status
+  liveStatus: Service Status
   allSystemsOperational: All systems operational
   degradedPerformance: Degraded performance
-  completeOutage: Complete outage
+  completeOutage: Service outage
+  url: URL
+  status: Status
+  history: History
+  responseTime: Response Time
+  uptime: Uptime
+  up: Operational
+  down: Down
+  degraded: Degraded
