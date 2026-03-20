@@ -1,0 +1,39 @@
+owner: app-shore
+repo: sally-status
+
+sites:
+  - name: API Liveness
+    url: https://sally-api-staging.appshore.in/api/v1/health/live
+    expectedStatusCodes:
+      - 200
+  - name: API Readiness (DB + Redis)
+    url: https://sally-api-staging.appshore.in/api/v1/health/ready
+    expectedStatusCodes:
+      - 200
+  - name: Web App
+    url: https://app.sally.staging.appshore.in
+  - name: Console
+    url: https://console.sally.staging.appshore.in
+
+status-website:
+  cname: status.sally.staging.appshore.in
+  name: SALLY Platform Status
+  introTitle: "**SALLY** is the AI-native fleet operations platform."
+  introMessage: Real-time monitoring of platform health and availability.
+  theme: dark
+  navbar:
+    - title: SALLY
+      href: https://app.sally.staging.appshore.in
+
+assignees:
+  - ajaynarang
+
+i18n:
+  activeIncidents: Active Incidents
+  noActiveIncidents: All systems operational
+  pastIncidents: Past Incidents
+  pastIncidentsResolved: Resolved
+  liveStatus: Live Status
+  allSystemsOperational: All systems operational
+  degradedPerformance: Degraded performance
+  completeOutage: Complete outage
