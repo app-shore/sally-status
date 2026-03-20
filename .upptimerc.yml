@@ -16,7 +16,7 @@ sites:
     url: https://console.staging.sally.appshore.in
 
 status-website:
-  cname: status.staging.sally.appshore.in
+  baseUrl: /sally-status
   name: SALLY Platform Status
   introTitle: "**SALLY** is the AI-native fleet operations platform."
   introMessage: Real-time monitoring of platform health and availability.
