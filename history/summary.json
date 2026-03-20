@@ -37,42 +37,42 @@
   },
   {
     "name": "Web App",
-    "url": "https://app.sally.staging.appshore.in",
-    "icon": "https://icons.duckduckgo.com/ip3/app.sally.staging.appshore.in.ico",
+    "url": "https://staging.sally.appshore.in",
+    "icon": "https://icons.duckduckgo.com/ip3/staging.sally.appshore.in.ico",
     "slug": "web-app",
     "status": "down",
-    "uptime": "0.05%",
-    "uptimeDay": "0.05%",
-    "uptimeWeek": "0.05%",
-    "uptimeMonth": "0.05%",
-    "uptimeYear": "0.05%",
+    "uptime": "0.02%",
+    "uptimeDay": "0.02%",
+    "uptimeWeek": "0.02%",
+    "uptimeMonth": "0.02%",
+    "uptimeYear": "0.02%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-03-20": 0
+      "2026-03-20": 11
     }
   },
   {
     "name": "Console",
-    "url": "https://console.sally.staging.appshore.in",
-    "icon": "https://icons.duckduckgo.com/ip3/console.sally.staging.appshore.in.ico",
+    "url": "https://console.staging.sally.appshore.in",
+    "icon": "https://icons.duckduckgo.com/ip3/console.staging.sally.appshore.in.ico",
     "slug": "console",
     "status": "down",
-    "uptime": "1.96%",
-    "uptimeDay": "1.96%",
-    "uptimeWeek": "1.96%",
-    "uptimeMonth": "1.96%",
-    "uptimeYear": "1.96%",
+    "uptime": "0.03%",
+    "uptimeDay": "0.03%",
+    "uptimeWeek": "0.03%",
+    "uptimeMonth": "0.03%",
+    "uptimeYear": "0.03%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-03-20": 0
+      "2026-03-20": 11
     }
   }
 ]
