@@ -40,19 +40,19 @@
     "url": "https://staging.sally.appshore.in",
     "icon": "https://staging.sally.appshore.in/favicon.ico",
     "slug": "web-dashboard",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 452,
-    "timeDay": 238,
-    "timeWeek": 452,
-    "timeMonth": 452,
-    "timeYear": 452,
+    "status": "up",
+    "uptime": "97.33%",
+    "uptimeDay": "90.58%",
+    "uptimeWeek": "97.33%",
+    "uptimeMonth": "97.33%",
+    "uptimeYear": "97.33%",
+    "time": 472,
+    "timeDay": 406,
+    "timeWeek": 472,
+    "timeMonth": 472,
+    "timeYear": 472,
     "dailyMinutesDown": {
-      "2026-03-24": 0
+      "2026-03-24": 136
     }
   },
   {
