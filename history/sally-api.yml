@@ -1,7 +1,7 @@
 url: https://sally-api-staging.appshore.in/api/v1/health/live
-status: down
-code: 503
-responseTime: 267
-lastUpdated: 2026-04-24T05:53:43.870Z
+status: up
+code: 200
+responseTime: 155
+lastUpdated: 2026-04-24T12:47:10.725Z
 startTime: 2026-03-20T18:05:11.018Z
 generator: Upptime <https://github.com/upptime/upptime>
