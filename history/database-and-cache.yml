@@ -1,7 +1,7 @@
 url: https://sally-api-staging.appshore.in/api/v1/health/ready
 status: up
 code: 200
-responseTime: 92
-lastUpdated: 2026-05-23T23:18:57.505Z
+responseTime: 45
+lastUpdated: 2026-05-24T23:21:54.256Z
 startTime: 2026-03-20T18:05:11.510Z
 generator: Upptime <https://github.com/upptime/upptime>
